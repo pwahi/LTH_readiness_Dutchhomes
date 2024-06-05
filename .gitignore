@@ -1,0 +1,6 @@
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Rhino .rhl and .3dmbak files
+*.rhl
+*.3dmbak
