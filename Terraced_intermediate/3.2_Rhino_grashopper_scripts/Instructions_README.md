@@ -85,3 +85,6 @@ Before you begin, ensure you have met the following requirements:
      - **Step 13**: Toggle `True` to write the results in the `Output_excel`.
 
 By following these steps, you can ensure a smooth and effective simulation process for the terraced-intermediate type samples at different supply temperatures.
+
+References:
+The code for Pollination API is developed using this discussion on the [Pollination forum](https://discourse.pollination.cloud/t/unable-to-load-a-large-number-of-runs-as-one-job/1446/9?u=prateekwahi)
