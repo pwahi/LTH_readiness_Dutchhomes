@@ -1,11 +1,11 @@
 # Instructions for Parametric Simulations
 
-This folder contains scripts, resources, and instructions for simulating samples representing terraced-intermediate types parametrically for different supply temperatures.
+This folder contains scripts, resources, and instructions for simulating terraced-intermediate samples parametrically for different supply temperatures.
 
 ## Contents
 
 1. **Rhino-Grasshopper Files**
-   - `Terraced_house.3dm`: Rhino file with seed model.
+   - `Terraced_house.3dm`: Rhino file with the seed model.
    - `Terraced_house.gh`: Accompanying Grasshopper script.
 
 2. **Weather Files**
@@ -16,16 +16,98 @@ This folder contains scripts, resources, and instructions for simulating samples
    - `hops_calculation_script.py`: Python script for Hops component in the Grasshopper script.
 
 4. **Jupyter Notebooks**
-   - `Pollination_API.ipynb`: Jupyter notebook to use Pollination API to simulate HBjson files generated from the Grasshopper script.
+   - `Pollination_API.ipynb`: Jupyter notebook to use Pollination API for simulating HBjson files generated from the Grasshopper script.
 
 5. **Directories**
    - These directories store various files required for simulations:
-     1. `Input_excel`: Contains samples in Excel format, used as input by Grasshopper files to generate HBjson files.
-     2. `Output_excel`: Stores Excel files to record the output of simulations.
-     3. `HBJson`: Stores the HBjson of every sample from the Grasshopper script.
-     4. `Sim_par`: Stores the corresponding simulation parameters for every HBjson from the Grasshopper script.
-     5. `Sql_files`: Stores the simulation results downloaded from the Pollination API.
+     - `Input_excel`: Contains samples in Excel format, used as input by Grasshopper files to generate HBjson files.
+     - `Output_excel`: Stores Excel files to record the output of simulations.
+     - `HBJson`: Stores the HBjson files of every sample from the Grasshopper script.
+     - `Sim_par`: Stores the corresponding simulation parameters for every HBjson from the Grasshopper script.
+     - `Sql_files`: Stores the simulation results downloaded from the Pollination API.
 
+## Note
+
+Separate subdirectories should be created inside `HBJson`, `Sim_par`, and `Sql_files` for each iteration run. The naming convention for the subdirectories should follow: `date_(hbjson/simpar/sqlfiles)_itr_(iteration number)_size_(size of the sample)_(supply temperature: HT/MT/LT)`. This is important for the `Pollination_API.ipynb` notebook to find the correct HBjson and simulation parameter files and download the SQL files to the correct folder.
+
+For example: 
+
+For example :
+1. Input_excel
+   * 2024-04-23_inputfile_itr_1_size_1300.xlsx
+2. Output_excel
+    * 2024-04-23_outputfile_itr_1_size_1300_HT.xslx
+3. HBjson
+    * subDirectory : 2024-04-23_hbjson_itr_1_size_1300_HT
+      * Files : Th_hbjson_sample_1.hbjson, Th_hbjson_sample_2.hbjson , ....
+4. Sim_par
+    * subDirectory : 2024-04-23_simpar_itr_1_size_1300_HT
+      * Files : Th_simpar_sample_1.hbjson, Th_simapr_sample_2.hbjson , .... 
+5. Sql_files
+    * subDirectory : 2024-04-23_sqlfiles_itr_1_size_1300_HT
+      * Files : Th_hbjson_sample_1.sql, Th_hbjson_sample_2.sql , ....
+
+
+To put the folder structure correctly in the markdown file, you should use backticks to create a code block, and backslashes to escape underscores and other special characters. Here’s how you can format it:
+
+markdown
+Copy code
+# Instructions for Parametric Simulations
+
+This folder contains scripts, resources, and instructions for simulating terraced-intermediate samples parametrically for different supply temperatures.
+
+## Contents
+
+1. **Rhino-Grasshopper Files**
+   - `Terraced_house.3dm`: Rhino file with the seed model.
+   - `Terraced_house.gh`: Accompanying Grasshopper script.
+
+2. **Weather Files**
+   - `NEN5060_min10_Hddy.ddy`: DDY file for heat loss calculations.
+   - `PW_NEN5060_2021_EPW.epw`: NEN5060 TRY file for simulations.
+
+3. **Python Scripts**
+   - `hops_calculation_script.py`: Python script for Hops component in the Grasshopper script.
+
+4. **Jupyter Notebooks**
+   - `Pollination_API.ipynb`: Jupyter notebook to use Pollination API for simulating HBjson files generated from the Grasshopper script.
+
+5. **Directories**
+   - These directories store various files required for simulations:
+     - `Input_excel`: Contains samples in Excel format, used as input by Grasshopper files to generate HBjson files.
+     - `Output_excel`: Stores Excel files to record the output of simulations.
+     - `HBJson`: Stores the HBjson files of every sample from the Grasshopper script.
+     - `Sim_par`: Stores the corresponding simulation parameters for every HBjson from the Grasshopper script.
+     - `Sql_files`: Stores the simulation results downloaded from the Pollination API.
+
+## Note
+
+Separate subdirectories should be created inside `HBJson`, `Sim_par`, and `Sql_files` for each iteration run. The naming convention for the subdirectories should follow: `date_hbjson/simpar/sqlfiles_itr_(iteration number)_size_(size of the sample)_(supply temperature: HT/MT/LT)`. This is important for the `Pollination_API.ipynb` notebook to find the correct HBjson and simulation parameter files and download the SQL files to the correct folder.
+
+For example:
+
+```
+1. Input_excel
+│ └── 2024-04-23_inputfile_itr_1_size_1300.xlsx
+2. Output_excel
+│ └── 2024-04-23_outputfile_itr_1_size_1300_HT.xlsx
+3. HBjson
+│ └── 2024-04-23_hbjson_itr_1_size_1300_HT
+│ ├── Th_hbjson_sample_1.hbjson
+│ ├── Th_hbjson_sample_2.hbjson
+│ └── ...
+4. Sim_par
+│ └── 2024-04-23_simpar_itr_1_size_1300_HT
+│ ├── Th_simpar_sample_1.json
+│ ├── Th_simpar_sample_2.json
+│ └── ...
+5. Sql_files
+└── 2024-04-23_sqlfiles_itr_1_size_1300_HT
+├── Th_hbjson_sample_1.sql
+├── Th_hbjson_sample_2.sql
+└── ...
+```
+    
 ## Dependencies
 
 Before you begin, ensure you have met the following requirements:
