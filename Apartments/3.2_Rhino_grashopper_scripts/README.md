@@ -1,14 +1,14 @@
 # Instructions for Parametric Simulations
 
-This folder contains scripts, resources, and instructions for simulating terraced-intermediate samples parametrically for different supply temperatures.
+This folder contains scripts, resources, and instructions for simulating apartments samples parametrically for different supply temperatures.
 The image below illustrates the simulation workflow.
 ![Simulation_workflow](Assets/simulation_workflow.png)
 
 ## Contents
 
 1. **Rhino-Grasshopper Files**
-   - `Terraced_house.3dm`: Rhino file with the seed model.
-   - `Terraced_house.gh`: Accompanying Grasshopper script.
+   - `Apartments.3dm`: Rhino file with the seed model.
+   - `Apartments.gh`: Accompanying Grasshopper script.
 
 2. **Weather Files**
    - `NEN5060_min10_Hddy.ddy`: DDY file for heat loss calculations.
@@ -43,22 +43,22 @@ For example:
 │ └── 2024-04-23_outputfile_itr_1_size_1300_HT.xlsx
 3. HBjson
 │ └── 2024-04-23_hbjson_itr_1_size_1300_HT
-│ ├── Th_hbjson_sample_1.hbjson
-│ ├── Th_hbjson_sample_2.hbjson
+│ ├── Apt_hbjson_sample_1.hbjson
+│ ├── Apt_hbjson_sample_2.hbjson
 │ └── ...
 4. Sim_par
 │ └── 2024-04-23_simpar_itr_1_size_1300_HT
-│ ├── Th_simpar_sample_1.json
-│ ├── Th_simpar_sample_2.json
+│ ├── Apt_simpar_sample_1.json
+│ ├── Apt_simpar_sample_2.json
 │ └── ...
 5. Sql_files
 └── 2024-04-23_sqlfiles_itr_1_size_1300_HT
-├── Th_hbjson_sample_1.sql
-├── Th_hbjson_sample_2.sql
+├── Apt_hbjson_sample_1.sql
+├── Apt_hbjson_sample_2.sql
 └── ...
 ```
-The `TH_sampling_notebook.ipynb` jupyter notebook must be used to sample as well as create these subdirectories in a dedicated project folder.
-Follow instructions in [3.3.1_Sampling_scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Terraced_intermediate/3.3.1_Sampling_scripts)
+The `Apt_sampling_notebook.ipynb` jupyter notebook must be used to sample as well as create these subdirectories in a dedicated project folder.
+Follow instructions in [3.3.1_Sampling_scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Apartments/3.3.1_Sampling_scripts)
     
 ## Dependencies
 
@@ -94,12 +94,12 @@ Before you begin, ensure you have met the following requirements:
 
 ### Prerequisite
 
-- The Grasshopper script uses the samples to create HBjson files for simulations. Therefore, before using the scripts, ensure you have the input Excel file exported from the sampling script ([3.3.1 sampling scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Terraced_intermediate/3.3.1_Sampling_scripts)) in the `Input_excel` subdirectory.
+- The Grasshopper script uses the samples to create HBjson files for simulations. Therefore, before using the scripts, ensure you have the input Excel file exported from the sampling script ([3.3.1 sampling scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Apartments/3.3.1_Sampling_scripts)) in the `Input_excel` subdirectory.
 - Make a copy of the exported input file and save it in `Output_excel`. The simulation results will be written to the last two columns of this Excel file.
 - You need a working API licence to use [Pollination cloud computing](https://www.pollination.cloud/). 
 ### Steps
 
-1. **Open `Terraced_house.3dm` in Rhino.**
+1. **Open `Apartments.3dm` in Rhino.**
 2. **Run `hops_calculation_script.py` before opening the Grasshopper script.**
 3. **Follow the steps in the Grasshopper script:**
    - **Step 1-4**: Select the correct input and output Excel files and subdirectories to store HBjson files.

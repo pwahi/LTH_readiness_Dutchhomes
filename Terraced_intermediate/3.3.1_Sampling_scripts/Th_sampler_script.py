@@ -12,69 +12,69 @@ parameters = {
     # Therefore, North:0, North-West:45, West:90, Sout-West:135, South:180, South-East:225, East:270, North-East:315
     "orientation": {
         "until 1945": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
-        "1946-1975": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
-        "1976-1991": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
-        "1992 after": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
+        "1945-1975": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
+        "1975-1995": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
+        "1995 after": {"values": [0, 45, 90, 135, 180, 225, 270, 315]},
     },
     "compactness_ratio": {
         "until 1945": {
             "bins": [(0, 0.5), (0.5, 1.0), (1.0, 1.5), (1.5, 2.0), (2.0, 2.5), (2.5, 3.0), (3.0, 3.5), (3.5, 4.0)],
             "probs": [0.0, 0.0, 0.412, 0.451, 0.113, 0.017, 0.007, 0]
         },
-        "1946-1975": {
+        "1945-1975": {
             "bins": [(0, 0.5), (0.5, 1.0), (1.0, 1.5), (1.5, 2.0), (2.0, 2.5), (2.5, 3.0), (3.0, 3.5), (3.5, 4.0)],
             "probs": [0.0, 0.0, 0.582, 0.374, 0.042, 0.001, 0.001, 0.0]
         },
-        "1976-1991": {
+        "1975-1995": {
             "bins": [(0, 0.5), (0.5, 1.0), (1.0, 1.5), (1.5, 2.0), (2.0, 2.5), (2.5, 3.0), (3.0, 3.5), (3.5, 4.0)],
             "probs": [0.0, 0.007, 0.697, 0.268, 0.028, 0.0, 0.0, 0.0]
         },
-        "1992 after": {
+        "1995 after": {
             "bins": [(0, 0.5), (0.5, 1.0), (1.0, 1.5), (1.5, 2.0), (2.0, 2.5), (2.5, 3.0), (3.0, 3.5), (3.5, 4.0)],
             "probs": [0.0, 0.0, 0.658, 0.303, 0.032, 0.007, 0.0, 0.0]
         },
     },
     "WWR": {
         "until 1945": {"values": [31]},
-        "1946-1975": {"values": [36]},
-        "1976-1991": {"values": [31]},
-        "1992 after": {"values": [29]},
+        "1945-1975": {"values": [36]},
+        "1975-1995": {"values": [31]},
+        "1995 after": {"values": [29]},
     },
     "Rc_Gr": {
         "until 1945": {"distribution": "triangular", "limits": (0.15, 5.04), "peak": 0.77},
-        "1946-1975": {"distribution": "triangular", "limits": (0.15, 5.48), "peak": 0.57},
-        "1976-1991": {"distribution": "triangular", "limits": (0.52, 5.38), "peak": 1.16},
-        "1992 after": {"distribution": "triangular", "limits": (1.7, 6), "peak": 2.68},
+        "1945-1975": {"distribution": "triangular", "limits": (0.15, 5.48), "peak": 0.57},
+        "1975-1995": {"distribution": "triangular", "limits": (0.52, 5.38), "peak": 1.16},
+        "1995 after": {"distribution": "triangular", "limits": (1.7, 6), "peak": 2.68},
     },
     "Rc_Wl": {
         "until 1945": {"distribution": "triangular", "limits": (0.19, 2.53), "peak": 0.7},
-        "1946-1975": {"distribution": "triangular", "limits": (0.19, 3.5), "peak": 0.84},
-        "1976-1991": {"distribution": "triangular", "limits": (0.8, 2.71), "peak": 1.53},
-        "1992 after": {"distribution": "triangular", "limits": (1.51, 7), "peak": 2.68},
+        "1945-1975": {"distribution": "triangular", "limits": (0.19, 3.5), "peak": 0.84},
+        "1975-1995": {"distribution": "triangular", "limits": (0.8, 2.71), "peak": 1.53},
+        "1995 after": {"distribution": "triangular", "limits": (1.51, 7), "peak": 2.68},
     },
     "Rc_Rf": {
         "until 1945": {"distribution": "triangular", "limits": (0.22, 2.53), "peak": 1.24},
-        "1946-1975": {"distribution": "triangular", "limits": (0.22, 3.78), "peak": 1.22},
-        "1976-1991": {"distribution": "triangular", "limits": (0.44, 3.78), "peak": 1.5},
-        "1992 after": {"distribution": "triangular", "limits": (2, 9), "peak": 2.75},
+        "1945-1975": {"distribution": "triangular", "limits": (0.22, 3.78), "peak": 1.22},
+        "1975-1995": {"distribution": "triangular", "limits": (0.44, 3.78), "peak": 1.5},
+        "1995 after": {"distribution": "triangular", "limits": (2, 9), "peak": 2.75},
     },
     "U_Gz": {
         "until 1945": {"distribution": "triangular", "limits": (1.4, 5.1), "peak": 2.96},
-        "1946-1975": {"distribution": "triangular", "limits": (1.565, 5.59), "peak": 2.73},
-        "1976-1991": {"distribution": "triangular", "limits": (1.8, 5.62), "peak": 2.82},
-        "1992 after": {"distribution": "triangular", "limits": (1, 3.31), "peak": 2.1},
+        "1945-1975": {"distribution": "triangular", "limits": (1.565, 5.59), "peak": 2.73},
+        "1975-1995": {"distribution": "triangular", "limits": (1.8, 5.62), "peak": 2.82},
+        "1995 after": {"distribution": "triangular", "limits": (1, 3.31), "peak": 2.1},
     },
     "U_Dr": {
         "until 1945": {"distribution": "triangular", "limits": (2, 3.4), "peak": 3.36},
-        "1946-1975": {"distribution": "triangular", "limits": (2, 3.4), "peak": 3.31},
-        "1976-1991": {"distribution": "triangular", "limits": (2, 3.4), "peak": 3.33},
-        "1992 after": {"distribution": "triangular", "limits": (1, 3.4), "peak": 3.27},
+        "1945-1975": {"distribution": "triangular", "limits": (2, 3.4), "peak": 3.31},
+        "1975-1995": {"distribution": "triangular", "limits": (2, 3.4), "peak": 3.33},
+        "1995 after": {"distribution": "triangular", "limits": (1, 3.4), "peak": 3.27},
     },
     "Inf": {
         "until 1945": {"distribution": "triangular", "limits": (0.7, 3), "peak": 3},
-        "1946-1975": {"distribution": "triangular", "limits": (0.7, 3), "peak": 3},
-        "1976-1991": {"distribution": "triangular", "limits": (0.7, 2.5), "peak": 2},
-        "1992 after": {"distribution": "triangular", "limits": (0.7, 1.5), "peak": 1},
+        "1945-1975": {"distribution": "triangular", "limits": (0.7, 3), "peak": 3},
+        "1975-1995": {"distribution": "triangular", "limits": (0.7, 2.5), "peak": 2},
+        "1995 after": {"distribution": "triangular", "limits": (0.7, 1.5), "peak": 1},
     },
     "Vent_sys": {
         # Since scipy libraries cannot take alphanumeric number we give codes to the ventilation system.
@@ -83,29 +83,29 @@ parameters = {
             "values": [1, 2, 3, 4, 5, 6, 7],
             "probs": [0.866, 0, 0.129, 0, 0, 0.005, 0]
         },
-        "1946-1975": {
+        "1945-1975": {
             "values": [1, 2, 3, 4, 5, 6, 7],
             "probs": [0.791, 0, 0.207, 0, 0, 0, 0.002]
         },
-        "1976-1991": {
+        "1975-1995": {
             "values": [1, 2, 3, 4, 5, 6, 7],
             "probs": [0.364, 0, 0.621, 0, 0, 0.013, 0.002]
         },
-        "1992 after": {
+        "1995 after": {
             "values": [1, 2, 3, 4, 5, 6, 7],
             "probs": [0.005, 0, 0.827, 0.005, 0.00, 0.154, 0.009]
         },
     },
     "Temp_set": {
         "until 1945": {"values": [18, 19, 20, 21]},
-        "1946-1975": {"values": [18, 19, 20, 21]},
-        "1976-1991": {"values": [18, 19, 20, 21]},
-        "1992 after": {"values": [18, 19, 20, 21]},
+        "1945-1975": {"values": [18, 19, 20, 21]},
+        "1975-1995": {"values": [18, 19, 20, 21]},
+        "1995 after": {"values": [18, 19, 20, 21]},
     }
 }
 
 # Define the probabilities for each construction year
-year_probabilities = {"until 1945": 0.172, "1946-1975": 0.309, "1976-1991": 0.338, "1992 after": 0.181}
+year_probabilities = {"until 1945": 0.172, "1945-1975": 0.309, "1975-1995": 0.338, "1995 after": 0.181}
 
 
 def get_params():

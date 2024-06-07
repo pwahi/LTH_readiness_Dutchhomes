@@ -4,3 +4,8 @@
 # Ignore Rhino .rhl and .3dmbak files
 *.rhl
 *.3dmbak
+
+# Ignore 
+.idea/
+__pycache__/
+
