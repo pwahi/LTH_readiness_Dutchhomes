@@ -1,6 +1,7 @@
 # Instructions for Parametric Simulations
 
 This folder contains scripts, resources, and instructions for simulating terraced-intermediate samples parametrically for different supply temperatures.
+![Simulation_workflow](Assets/simulation%20workflow.tif)
 
 ## Contents
 
@@ -90,7 +91,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Prerequisite
 
-- The Grasshopper script uses the samples to create HBjson files for simulations. Therefore, before using the scripts, ensure you have the input Excel file exported from the sampling script (see section 3.3 / directory 3.3.1 sampling scripts) in the `Input_excel` subdirectory.
+- The Grasshopper script uses the samples to create HBjson files for simulations. Therefore, before using the scripts, ensure you have the input Excel file exported from the sampling script ([3.3.1 sampling scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Terraced_intermediate/3.3.1_Sampling_scripts)) in the `Input_excel` subdirectory.
 - Make a copy of the exported input file and save it in `Output_excel`. The simulation results will be written to the last two columns of this Excel file.
 - You need a working API licence to use [Pollination cloud computing](https://www.pollination.cloud/). 
 ### Steps
