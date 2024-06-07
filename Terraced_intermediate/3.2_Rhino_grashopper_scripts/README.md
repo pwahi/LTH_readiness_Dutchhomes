@@ -53,6 +53,8 @@ For example:
 ├── Th_hbjson_sample_2.sql
 └── ...
 ```
+The `TH_sampling.ipynb` jupyter notebook can be used to sample as well as create these subdirectories in a dedicated project folder.
+Follow instructions in [3.3.1_Sampling_scripts](Terraced_intermediate/3.3.1_Sampling_scripts)
     
 ## Dependencies
 
@@ -90,7 +92,7 @@ Before you begin, ensure you have met the following requirements:
 
 - The Grasshopper script uses the samples to create HBjson files for simulations. Therefore, before using the scripts, ensure you have the input Excel file exported from the sampling script (see section 3.3 / directory 3.3.1 sampling scripts) in the `Input_excel` subdirectory.
 - Make a copy of the exported input file and save it in `Output_excel`. The simulation results will be written to the last two columns of this Excel file.
-
+- You need a working API licence to use [Pollination cloud computing](https://www.pollination.cloud/). 
 ### Steps
 
 1. **Open `Terraced_house.3dm` in Rhino.**
