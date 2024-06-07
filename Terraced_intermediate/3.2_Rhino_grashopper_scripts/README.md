@@ -54,7 +54,7 @@ For example:
 └── ...
 ```
 The `TH_sampling.ipynb` jupyter notebook can be used to sample as well as create these subdirectories in a dedicated project folder.
-Follow instructions in [3.3.1_Sampling_scripts](Terraced_intermediate/3.3.1_Sampling_scripts)
+Follow instructions in [3.3.1_Sampling_scripts](https://github.com/pwahi/LTH_readiness_Dutchhomes/tree/main/Terraced_intermediate/3.3.1_Sampling_scripts)
     
 ## Dependencies
 
