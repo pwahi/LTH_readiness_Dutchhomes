@@ -1,7 +1,7 @@
 # Instructions for Parametric Simulations
 
 This folder contains scripts, resources, and instructions for simulating terraced-intermediate samples parametrically for different supply temperatures.
-![Simulation_workflow](Assets/simulation%20workflow.tif)
+![Simulation_workflow](Assets/simulation_workflow.png)
 
 ## Contents
 
