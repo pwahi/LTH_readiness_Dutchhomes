@@ -1,5 +1,5 @@
 # Parameters affecting Lower Temperature Heating Readiness in Dutch homes : Data and Code
-[!DOI](10.4121/65afe08d-ee21-4531-9218-5f595cef7f69.v1)
+[![DOI](https://data.4tu.nl/v3/datasets/22215562/doi-badge-v1.svg)](https://doi.org/10.4121/65afe08d-ee21-4531-9218-5f595cef7f69.v1).
 
 This repository contains the data and code associated with the research paper titled 
 "_**Evaluating Building-Level Parameters for Lower-Temperature Heating Readiness: A Sampling-based Approach to Addressing the Heterogeneity of Dutch Housing Stock.**_"
