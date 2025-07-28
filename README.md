@@ -1,5 +1,5 @@
 # Parameters affecting Lower Temperature Heating Readiness in Dutch homes : Data and Code
-[![DOI](https://data.4tu.nl/v1/datasets/457a8333-5600-4df9-b9f9-694a8db56b92/doi-badge.svg)](https://doi.org/10.4121/457a8333-5600-4df9-b9f9-694a8db56b92)
+[![DOI](10.4121/65afe08d-ee21-4531-9218-5f595cef7f69.v1)
 
 This repository contains the data and code associated with the research paper titled 
 "_**Evaluating Building-Level Parameters for Lower-Temperature Heating Readiness: A Sampling-based Approach to Addressing the Heterogeneity of Dutch Housing Stock.**_"
@@ -9,7 +9,7 @@ If you use the data or code from this repository, please cite it using the follo
 
 *Please add the appropriate DataCite citation format here.*
 
-You can access the research artile using this [DOI](https://dx.doi.org/10.2139/ssrn.4854455)
+You can access the research artile using this [DOI]([https://dx.doi.org/10.2139/ssrn.4854455](https://doi.org/10.1016/j.enbuild.2024.114703))
 
 ## Folder structure. 
 The repository is organised according to the two dwelling types studied: `terraced-intermediate` and `apartment` dwellings.
